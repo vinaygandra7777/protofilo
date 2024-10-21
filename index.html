@@ -39,9 +39,9 @@
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
         justify-content:end;
-        margin-right: 4em;
+        margin-right: 0em;
         gap:1em;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     .navtop a:hover{
       border-bottom: 3px solid orange;
@@ -259,7 +259,7 @@ ul {
   width:100vw;
   position: relative;
   /* background-color: #0a0909; */
-  background-image: url(phoo.png);
+  background-image: url(contact.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -305,8 +305,14 @@ ul {
   margin-left:15%;
   box-shadow: 0px 0px 7px 0px white;
 }
+  /* background-image: url(contact.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100vw;
+      background-attachment: fixed; */
 .cont3{
-  width:100vw;
+  width: 100vw;
   height: 100vh;
 }
 .edu{
@@ -356,6 +362,15 @@ ul {
       color: white;
      
     }
+   .cont4{
+      /* background-image: url(contact.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 150vh;
+      width: 100vw;
+      background-attachment: fixed; */
+
+    } 
     .project{
       display: grid;
       grid-template-columns: auto auto;
@@ -430,21 +445,23 @@ ul {
       /* background-color:rgba(26,26,26,255);
       box-shadow: 0px 0px 7px 0px black; */
       width:150%;
-      border:1px solid white;
       height:90%;
       padding: 10%;
+      box-shadow: 0px 0px 6px 0px black;
     }
     .service2{
       width:170%;
-      border: 1px solid white;
       height: 90%;
       padding: 10%;
+      box-shadow: 0px 0px 6px 0px black;
     }
     .service3{
       padding: 10%;
       width:120%;
-      border:1px solid white;
+      border:0px solid white;
       height:90%;
+      box-shadow: 0px 0px 6px 0px black;
+      
     }
     .service1 i,.service2 i,.service3 i{
       font-size: 6em;
@@ -467,6 +484,12 @@ ul {
     }
     footer{
       height: 100vh;
+      /* background-image: url(contact.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100vw;
+      background-attachment: fixed; */
     }
     .foot1{
       margin-left: 17%;
@@ -489,7 +512,7 @@ ul {
     }
     .ft{
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto  auto;
       justify-content:center;
       gap:12em;
       padding: 40px;
@@ -524,6 +547,66 @@ ul {
 .text.visible {
     opacity: 1;
 }
+/* From Uiverse.io by vinodjangid07 */ 
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px orange;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  margin-left: 48%;
+  margin-top: 5%;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color:orange;
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.5s;
+}
+
 @media (width<=600px){
   body{
     width:600px;
@@ -619,7 +702,7 @@ ul {
   .cont6{
     height: 110vh;
     width:90%;
-    margin-left: 5%;
+    margin-left: 3%;
   } 
   .ft{
     display: grid;
@@ -631,6 +714,9 @@ ul {
   footer p{
     letter-spacing: 0px;
     font-size: 0.8em;
+  }
+  .button{
+    display: none;
   }
 
 }
@@ -812,6 +898,15 @@ ul {
       </ul>
 
     </div>
+    <a href="#home">
+    <button class="button">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+      </svg>
+    </button>
+    </a>
 
   </section>
   <br>
@@ -877,6 +972,16 @@ ul {
     </div>
 
   </div>
+  <a href="#home">
+    <button class="button">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+      </svg>
+    </button>
+    </a>
+
 
   </section>
   <br>
